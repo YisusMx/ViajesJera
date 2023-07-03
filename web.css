@@ -1,0 +1,768 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color:#F2E0D5; /*color del body de la web*/
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0,3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,5);
+    color:black;
+    background-color:azure;
+}
+
+button:hover{
+    background-color: rgb(172, 232, 236);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    
+}
+
+
+
+
+
+header{
+    padding: 25px 25px;
+    background-color: white;
+}
+
+header .logo{
+    
+    margin: 0;
+    padding: 30px 30px;
+    font-weight: bold;
+    color: cadetblue;
+    font-size: 1.6em;
+    
+}
+
+header .container{
+    background-image: url(Img/logo.jpg);
+    background-size: 150px 100px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-image: linear-gradient();
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+header a{
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: cadetblue;
+}
+
+
+/*Inicio*/
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("Img/chichen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;   
+}
+
+
+
+
+#hero h1{
+    color: white;
+}
+
+
+
+#Nosotros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#Mision .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Vision .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+#Circuitos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+
+
+#circuitos .container{
+    padding: 150px 12px;
+}
+
+#Circuitos h2{
+    margin-top: 0;
+    font-size:  3.2em;
+}
+
+#Circuitos p{
+    display: none;
+}
+
+#Circuitos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Img/Tour1.jpg);
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Img/Tour2.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(Img/Tour3.jpg);
+}
+
+
+
+
+#Comentarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    
+}
+
+#Comentarios .comentario{
+    background-image: url(Img/Comentarios.png);
+    margin: 0px;
+    padding: 100px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#Comentarios h2{
+    justify-content: center;
+    margin: 0px;
+    padding: 100px;
+    color: rgb(100,100,100);
+    font-size: 3em;
+}
+
+
+
+
+
+#DatosWeb {
+    background-color: #F2E0D5;
+    text-align: center;
+    color: #F2E0D5;
+    
+}
+
+#DatosWeb .Info{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+#DatosWeb .container{
+    padding: 300px 300px;
+}
+
+#DatosWeb h2{
+    margin-top: 0;
+    font-size:  3.2em;
+}
+
+#DatosWeb p{
+    display: none;
+}
+
+#DatosWen .datos pWhite{
+    justify-content: center;
+}
+
+
+.Info:first-child{
+    background-image: linear-gradient();
+}
+
+#DatosWeb .logo2{
+    justify-content: center;
+    margin: 0px;
+    padding: 100px;
+    color: rgb(100,100,100);
+    background-image: url(Img/logopng.png);
+    background-size: 240px;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+
+
+#DatosWeb .datos pInfo{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(100,100,100);
+    
+}  
+
+#DatosWeb a{
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    color: rgb(100,100,100);
+    
+}
+
+
+
+
+.Info:nth-child(2){
+    background-image: linear-gradient();
+}
+
+#DatosWeb .Paypal{
+    background-image: url(Img/Paypal.png);
+    margin: 0px;
+    padding: 100px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+#DatosWeb .datos ppaypal{
+    margin: 0;
+    padding: 0;
+    font-size: 1.7em;
+    color: rgb(100,100,100);   
+}
+
+#DatosWeb .Tarjetas{
+    background-image: url(Img/tarjetas.png);
+    margin: 0px;
+    padding: 100px;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    background-position:top;
+}
+
+#DatosWeb .Tarjetas ptarjetas{
+    margin: 0;
+    padding: 0;
+    font-size: 1.7em;
+    color: rgb(100,100,100); 
+}
+
+.Info:nth-child(3){
+    background-image: linear-gradient();
+}
+#DatosWeb .datos{
+    justify-content: center;
+}
+#DatosWeb .datos pmail{
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(100,100,100);
+    background-image: url(Img/gmail.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#DatosWeb .datos pcel{
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(100,100,100);
+    background-image: url(Img/whatsapp.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+#DatosWeb .datos pf{
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(100,100,100);
+    background-image: url(Img/facebook.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#DatosWeb .datos pi{
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    color: rgb(100,100,100);
+    background-image: url(Img/instagram.png);
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+#DatosWeb .datos pAtencion{
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: rgb(100,100,100);
+}
+
+
+
+
+footer{
+    background-color: white;
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    color: rgb(100,100,100);
+}
+
+footer .pagfake{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer .copy{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+/*Tour Web*/
+
+#Tour .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+#itinerario .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+
+/*Avisos de Privacidad*/
+
+#Encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: black;
+}
+
+/*contacto*/
+#herocontacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:unset;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+        )
+        ,url("Img/labna.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#datoatencion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 20vh;   
+}
+
+@media (min-width: 850px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    
+    
+   /*Inicio*/
+
+    #hero h1{
+        font-size: 5em;
+    }
+    
+    
+    
+    
+    #Nosotros .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    #Nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Nosotros h2{
+        margin-top: 0px;
+    }
+
+    #Nosotros .img-container{
+        background-image: url(Img/Somos.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 800px; 
+    }
+
+    #Comentarios .comentario{
+        background-image: url(Img/Comentarios.png);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        width: 800px;
+    }
+    
+    
+    #Circuitos .Ofertas{
+        display: flex;
+        justify-content: center;
+    }
+    #Circuitos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #Circuitos h2{
+        font-size: 4em;
+    }
+    #Circuitos h3{
+        margin-top: 0;
+    }
+
+    
+    
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(Img/Tour1.jpg);
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(Img/Tour2.jpg);
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(Img/Tour3.jpg);
+    }
+    
+
+    #DatosWeb .datos{
+        display: flex;
+        justify-content: center;
+    }
+    
+    #DatosWeb h3{
+        margin-top: 0;
+        font-size:  3.2em;
+    }
+    
+    #DatosWeb p{
+        display: none;
+    }
+    
+    #DatosWeb .Info{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        box-shadow: 2px 2px 10px 
+    }
+    .Info:first-child{
+        background-image: linear-gradient();
+    }
+    .Info:nth-child(2){
+        background-image: linear-gradient();
+    }
+    .Info:nth-child(3){
+        background-image: linear-gradient();
+    }
+    
+    
+    
+    #Reserva h2{
+        font-size: 5em;
+    }
+    
+    #Reserva button{
+        font-size: 2em;
+    }
+    
+    
+    
+    footer .container{
+        justify-content: center;
+    }
+
+    /*Tours*/
+
+    #Tour .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Tour .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #Tour .img-container{
+        background-image: url("Img/Promocional2.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 600px; 
+    }
+
+    #itinerario .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #itinerario .parte1{
+        background-image: url("Img/dia5.png");
+        padding-right: 30px;
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 600px; 
+    }
+
+    #itinerario .parte2{
+        background-image: url("Img/dia6.png");
+        padding-left: 30px ;
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 600px;
+    }
+
+    #precio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #precio .adulto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    #precio .menor{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    #precio .detalles{
+        text-align: center;
+    }
+
+/*Preguntas Frecuentes*/
+
+    #preguntas .container{
+        
+        padding: 20px;
+        font-size: 200px;
+    }
+
+
+/*Contacto*/
+
+#contacto .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contacto .celular{
+    width: 50%;
+    max-width: 600px;
+    text-align:left;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Img/whatsapp.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+#contacto .mail{
+    width: 50%;
+    max-width: 600px;
+    text-align: left;
+    padding-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Img/gmail.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+#datoatencion .container{
+    justify-content: center;
+}
+
+#contacto .horario{
+    font-size: 200px;
+    text-align: center;
+    padding: 0;
+    justify-content: center;
+}
+
+
+}
+
+@media (min-width: 1200px) {
+    
+}
